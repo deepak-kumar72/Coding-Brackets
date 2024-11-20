@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model ContactInfo {
+  id           Int      @id @default(autoincrement())
+  name         String
+  email        String
+  phone        String
+  requirements String
+  service      Service  @relation(fields: [service_id], references: [id])
+  service_id   Int
+  comment      String?  @db.Text
+  createdAt    DateTime @default(now())
+}
+
+model Service {
+  id          Int           @id @default(autoincrement())
+  name        String        @db.VarChar(200)
+  status      Int           @default(0)
+  createdAt   DateTime      @default(now())
+  ContactInfo ContactInfo[]
+}
+
+model services_pages {
+  id                Int      @id @default(autoincrement())
+  name              String   @db.VarChar(255)
+  description       String   @db.Text
+  title             String   @db.VarChar(255)
+  sub_title         String   @db.VarChar(255)
+  short_description String   @db.VarChar(600)
+  banner_img        String   @db.VarChar(255)
+  createdAt         DateTime @default(now())
+}
+
+model portfolio {
+  id              Int              @id @default(autoincrement())
+  category        project_category @relation(fields: [cat_id], references: [id])
+  cat_id          Int
+  title           String           @db.VarChar(255)
+  description     String           @db.VarChar(600)
+  portfolio_image String           @db.VarChar(400)
+  createdAt       DateTime         @default(now())
+}
+
+model project_category {
+  id         Int         @id @default(autoincrement())
+  name       String      @db.VarChar(255)
+  status     Int         @default(0)
+  created_at DateTime    @default(now())
+  portfolio  portfolio[]
+}

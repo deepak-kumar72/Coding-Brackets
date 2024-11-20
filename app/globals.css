@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  color: #ffff;
+  background: #fe765d;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0788a5;
+}
+::-webkit-scrollbar-track {
+  background: #bafaff;
+}
+
+.hero-headline::after {
+  content: "";
+  animation: typing 4s ease-out infinite;
+  border-right: 3px solid #000333;
+}
+
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  5% {
+    content: "u";
+  }
+  10% {
+    content: "ur";
+  }
+  15% {
+    content: "ur ";
+  }
+  20% {
+    content: "ur B";
+  }
+  25% {
+    content: "ur Bu";
+  }
+  30% {
+    content: "ur Bus";
+  }
+  35% {
+    content: "ur Busi";
+  }
+  40% {
+    content: "ur Busin";
+  }
+  45% {
+    content: "ur Busine";
+  }
+  50% {
+    content: "ur Busines";
+  }
+  55% {
+    content: "ur Business";
+  }
+  60% {
+    content: "ur Business ";
+  }
+  65% {
+    content: "ur Business D";
+  }
+  70% {
+    content: "ur Business De";
+  }
+  75% {
+    content: "ur Business Des";
+  }
+  80% {
+    content: "ur Business Dese";
+  }
+  85% {
+    content: "ur Business Deser";
+  }
+  90% {
+    content: "ur Business Deserv";
+  }
+  95% {
+    content: "ur Business Deserve";
+  }
+  100% {
+    content: "ur Business Deserves";
+  }
+}
+
+.footer-skewed {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 15%);
+}
+
+@media screen and (max-width: 800px) {
+  .footer-skewed {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 5%);
+  }
+}
+
+.CustomerReviews {
+  animation: sliderkey 25s linear infinite;
+}
+
+.reviews-container:hover {
+  .CustomerReviews {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes sliderkey {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+
+@media screen and (min-width: 1535px) {
+  div > .hero-image {
+    max-width: 100%;
+  }
+}
