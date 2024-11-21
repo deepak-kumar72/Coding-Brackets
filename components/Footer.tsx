@@ -4,16 +4,18 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import CodingBracketsLogo from "./svg/CodingBracketsLogo";
+import { FaLinkedin } from "react-icons/fa";
 
 const socials: { id: number; href: string; Icon: ReactNode }[] = [
-  { id: 1, href: "", Icon: <FaFacebook className="w-5 h-5 lg:w-6 lg:h-6" /> },
+  { id: 1, href: "https://www.facebook.com/profile.php?id=61552930717903", Icon: <FaFacebook className="w-5 h-5 lg:w-6 lg:h-6" /> },
   {
     id: 2,
-    href: "",
+    href: "https://www.instagram.com/codingbracketspro/",
     Icon: <AiFillInstagram className="w-5 h-5 lg:w-6 lg:h-6" />,
   },
-  { id: 3, href: "", Icon: <FaYoutube className="w-5 h-5 lg:w-6 lg:h-6" /> },
+  { id: 3, href: "https://www.linkedin.com/company/codingbracket/?viewAsMember=true", Icon: <FaLinkedin className="w-5 h-5 lg:w-5 lg:h-5" /> },
   { id: 4, href: "", Icon: <FaXTwitter className="w-5 h-5 lg:w-5 lg:h-5" /> },
+  { id: 5, href: "", Icon: <FaYoutube className="w-5 h-5 lg:w-6 lg:h-6" /> },
 ];
 
 const companyLinks: { id: number; href: string; name: string }[] = [
@@ -23,6 +25,7 @@ const companyLinks: { id: number; href: string; name: string }[] = [
   { id: 4, href: "", name: "Refund Policy" },
   { id: 6, href: "/our-teams", name: "Our teams" },
   { id: 5, href: "/contact-us", name: "Contact Us" },
+  { id: 7, href: "https://codingbrackets.com/sitemap.xml", name: "Sitemap" },
 ];
 
 const contacts: { id: number; heading: string; details: string }[] = [
@@ -32,8 +35,8 @@ const contacts: { id: number; heading: string; details: string }[] = [
     details:
       "4/453,Vibhav Khand Gomti Nagar Lucknow 226010 , India (OPEN 24 HOURS)",
   },
-  { id: 2, heading: "Phone", details: "+919616782253" },
-  { id: 3, heading: "MailTo", details: "sales@codingbrackets.dev" },
+  { id: 2, heading: "Phone", details: "+919696510838" },
+  { id: 3, heading: "MailTo", details: "sales@codingbrackets.com" },
 ];
 
 const Footer = () => {
@@ -106,9 +109,14 @@ const Footer = () => {
       </div>
 
       <div className="bg-[#E3E9F5] px-3">
+     
         <div className="container mx-auto font-medium text-sm md:text-base text-black py-3">
           © 2015 - 2023 QLOUDIN Technologies Pvt Ltd. All Rights Reserved
         </div>
+        <div className="container mx-auto font-medium text-sm md:text-base justify-end text-black py-3 s">
+          <Link href='https://codingbrackets.com/sitemap.xml' className="text-left">Sitemap</Link>
+        </div>
+      
       </div>
     </footer>
   );

@@ -28,7 +28,10 @@ import {
   SiSymphony,
 } from "react-icons/si";
 import PopUpForm from "./PopUpForm";
+import { SiGoogleads } from "react-icons/si";
 import CodingBracketsLogo from "./svg/CodingBracketsLogo";
+import Seo from "./svg/seo";
+import SocialMedia from "./svg/socialMedia";
 
 const navLinks: { id: number; link: string; href: string }[] = [
   { id: 1, link: "Home", href: "/" },
@@ -143,21 +146,21 @@ const services: {
   },
   {
     id: 17,  // Increment ID appropriately
-    title: "Search Engine Optimisation",
+    title: "SEO",
     href: "/services/search-engine-optimization", // Adjust URL as needed
-    icon: <TbSeo className="w-6 h-6" />, // Replace with an appropriate icon
+    icon: <Seo classNames="w-6 h-6"/>, // Replace with an appropriate icon
   },
   {
     id: 18,  // Increment ID appropriately
     title: "Google & Meta Ads",
     href: "/services/google-and-metaAds", // Adjust URL as needed
-    icon: <RiAdvertisementFill className="w-6 h-6" />, // Replace with an appropriate icon
+    icon: <SiGoogleads className="w-6 h-6" />, // Replace with an appropriate icon
   },
   {
     id: 19,  // Increment ID appropriately
     title: "Social Media Optimisation",
     href: "/services/social-media-optimisation", // Adjust URL as needed
-    icon: <FaGlobe className="w-6 h-6" />, // Replace with an appropriate icon
+    icon: <SocialMedia classNames="w-6 h-6" />, // Replace with an appropriate icon
   },
 
 ];
@@ -196,7 +199,7 @@ const NavBar = () => {
                   <Link
                     href={navItem.href}
                     className={
-                      "h-full flex align-middle justify-center items-center group " +
+                      " flex align-middle justify-center items-center group " +
                       (navItem.href === pathname ||
                       pathname.includes(navItem.link.toLowerCase())
                         ? "text-[#000333]"
@@ -231,7 +234,7 @@ const NavBar = () => {
 
                   {navItem.link === "Services" && (
                     <div
-                      className={`overflow-hidden absolute z-[999999999] min-w-fit transition-all duration-300 ease-in-out text-white bg-gradient-to-br from-purple-900/80 to-black/80 backdrop-blur-lg border-[.5px] border-slate-300 rounded-md p-5 lg:bottom-[-630%] xl:bottom-[-670%] left-[-150%] ${
+                      className={`overflow-hidden absolute h-100 z-[999999999] min-w-fit transition-all duration-300 ease-in-out text-white bg-gradient-to-br from-purple-900/80 to-black/80 backdrop-blur-lg border-[.5px] border-slate-300 rounded-md p-4 lg:bottom-[-645%] xl:bottom-[-645%] left-[-150%] ${
                         openServices
                           ? "block opacity-100 w-[650px]"
                           : "hidden opacity-0"
@@ -251,7 +254,7 @@ const NavBar = () => {
                         {services.map((service) => (
                           <Link
                             key={service.id}
-                            className={`p-4 flex space-x-3 align-middle items-center hover:bg-[#000333]/80 w-full text-start rounded-md transition-all duration-200 ease-in-out ${
+                            className={`p-2.5 flex space-x-3 align-middle items-center hover:bg-[#000333]/80 w-full text-start rounded-md transition-all duration-200 ease-in-out ${
                               openServices ? "cursor-pointer" : "cursor-default"
                             } `}
                             href={service.href}
