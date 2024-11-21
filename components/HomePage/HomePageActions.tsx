@@ -16,11 +16,11 @@ const HomePageActions = () => {
         Request a Free Quote!
       </button>
       <Link
-        href="tel:+919616782253"
+        href="tel:+919696510838"
         className="flex justify-center px-5 py-3 rounded-xl bg-[#000333] text-white font-bold text-base xl:text-xl text-center align-middle items-center hover:text-[#000333] hover:bg-white hover:ring-1 hover:ring-[#000333] transition-all duration-300 ease-in-out"
       >
         <BiSolidPhoneCall className="w-7 h-7 lg:w-8 lg:h-8 mr-3" />{" "}
-        <span>+91 9616782253</span>
+        <span>+91 9696510838</span>
       </Link>
 
       <div

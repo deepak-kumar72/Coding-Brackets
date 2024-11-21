@@ -25,7 +25,7 @@ const companyLinks: { id: number; href: string; name: string }[] = [
   { id: 4, href: "", name: "Refund Policy" },
   { id: 6, href: "/our-teams", name: "Our teams" },
   { id: 5, href: "/contact-us", name: "Contact Us" },
-  { id: 7, href: "https://codingbrackets.com/sitemap.xml", name: "Sitemap" },
+  { id: 7, href: "/sitemap.xml", name: "Sitemap" },
 ];
 
 const contacts: { id: number; heading: string; details: string }[] = [
@@ -113,9 +113,7 @@ const Footer = () => {
         <div className="container mx-auto font-medium text-sm md:text-base text-black py-3">
           © 2015 - 2023 QLOUDIN Technologies Pvt Ltd. All Rights Reserved
         </div>
-        <div className="container mx-auto font-medium text-sm md:text-base justify-end text-black py-3 s">
-          <Link href='https://codingbrackets.com/sitemap.xml' className="text-left">Sitemap</Link>
-        </div>
+       
       
       </div>
     </footer>
