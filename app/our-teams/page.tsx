@@ -8,29 +8,19 @@ import Image from "next/image";
 
 const teams: { id: number; name: string; role: string; image: string }[] = [
   {
-    id: 7,
+    id: 1,
     name: "Rajesh Chauhan",
     role: "Founder",
     image: "/teams-7.png",
   },
+ 
   {
-    id: 1,
-    name: "Ranjeet Singh",
-    role: "Co-Founder",
-    image: "/teams-1.jpg",
-  },
-  {
-    id: 5,
+    id: 2,
     name: "Ranjan Chatterjee",
     role: "Server & Technical Head",
     image: "/teams-6.png",
   },
-  {
-    id: 4,
-    name: "Abhishek Kaushal",
-    role: "Full stack Developer",
-    image: "/teams-4.jpg",
-  },
+  
   {
     id: 3,
     name: "Balbeer Verma",
@@ -38,11 +28,23 @@ const teams: { id: number; name: string; role: string; image: string }[] = [
     image: "/teams-3.png",
   },
   {
-    id: 2,
+    id: 4,
     name: "Garima Dubey",
     role: "Business Analyst",
     image: "/teams-2.jpg",
   },
+  {
+    id: 5,
+    name: "Alekh Banshwar",
+    role: "Full Stack Developer",
+    image: "",
+  },
+  {
+    id: 6,
+    name: "Deepak Kumar kushwaha",
+    role: "Web Developer",
+    image: "/teams-7.jpg",
+  }
 ];
 
 

@@ -96,72 +96,72 @@ const services: {
     href: "/services/nodejs-development",
     icon: <FaNodeJs className="w-6 h-6" />,
   },
+  // {
+  //   id: 9,
+  //   title: "Python Development",
+  //   href: "/services/python-development",
+  //   icon: <FaPython className="w-6 h-6" />,
+  // },
+  // {
+  //   id: 10,
+  //   title: "Django Development",
+  //   href: "/services/django-development",
+  //   icon: <SiDjango className="w-6 h-6" />,
+  // },
   {
     id: 9,
-    title: "Python Development",
-    href: "/services/python-development",
-    icon: <FaPython className="w-6 h-6" />,
-  },
-  {
-    id: 10,
-    title: "Django Development",
-    href: "/services/django-development",
-    icon: <SiDjango className="w-6 h-6" />,
-  },
-  {
-    id: 11,
     title: "Framework Development",
     href: "/services/framework-development",
     icon: <SiFramework className="w-6 h-6" />,
   },
+  // {
+  //   id: 12,
+  //   title: "Symfony Development",
+  //   href: "/services/symfony-development",
+  //   icon: <SiSymphony className="w-6 h-6" />,
+  // },
   {
-    id: 12,
-    title: "Symfony Development",
-    href: "/services/symfony-development",
-    icon: <SiSymphony className="w-6 h-6" />,
-  },
-  {
-    id: 13,
+    id: 10,
     title: "ExpressJS Development",
     href: "/services/express-development",
     icon: <SiExpress className="w-6 h-6" />,
   },
   {
-    id: 14,
+    id: 11,
     title: "CodeIgniter Development",
     href: "/services/codeigniter-development",
     icon: <DiCodeigniter className="w-6 h-6" />,
   },
   {
-    id: 15,
+    id: 12,
     title: "Laravel Development",
     href: "/services/laravel-development",
     icon: <FaLaravel className="w-6 h-6" />,
   },
+  // {
+  //   id: 16,
+  //   title: "Database Services",
+  //   href: "/services/database-services",
+  //   icon: <FaDatabase className="w-6 h-6" />,
+  // },
   {
-    id: 16,
-    title: "Database Services",
-    href: "/services/database-services",
-    icon: <FaDatabase className="w-6 h-6" />,
-  },
-  {
-    id: 17,  // Increment ID appropriately
+    id: 13,  
     title: "SEO",
-    href: "/services/search-engine-optimization", // Adjust URL as needed
-    icon: <Seo classNames="w-6 h-6"/>, // Replace with an appropriate icon
+    href: "/services/search-engine-optimization", 
+    icon: <Seo classNames="w-6 h-6"/>, 
   },
   {
-    id: 18,  // Increment ID appropriately
+    id: 14, 
     title: "Google & Meta Ads",
-    href: "/services/google-and-metaAds", // Adjust URL as needed
-    icon: <SiGoogleads className="w-6 h-6" />, // Replace with an appropriate icon
+    href: "/services/google-and-metaAds", 
+    icon: <SiGoogleads className="w-6 h-6" />, 
   },
-  {
-    id: 19,  // Increment ID appropriately
-    title: "Social Media Optimisation",
-    href: "/services/social-media-optimisation", // Adjust URL as needed
-    icon: <SocialMedia classNames="w-6 h-6" />, // Replace with an appropriate icon
-  },
+  // {
+  //   id: 19, 
+  //   title: "Social Media Optimisation",
+  //   href: "/services/social-media-optimisation", 
+  //   icon: <SocialMedia classNames="w-6 h-6" />, 
+  // },
 
 ];
 
@@ -234,7 +234,7 @@ const NavBar = () => {
 
                   {navItem.link === "Services" && (
                     <div
-                      className={`overflow-hidden absolute h-100 z-[999999999] min-w-fit transition-all duration-300 ease-in-out text-white bg-gradient-to-br from-purple-900/80 to-black/80 backdrop-blur-lg border-[.5px] border-slate-300 rounded-md p-4 lg:bottom-[-645%] xl:bottom-[-645%] left-[-150%] ${
+                      className={`overflow-hidden absolute h-100 z-[999999999] min-w-fit transition-all duration-300 ease-in-out text-white bg-gradient-to-br from-purple-900/80 to-black/80 backdrop-blur-lg border-[.5px] border-slate-300 rounded-md p-4 lg:bottom-[-145%] xl:bottom-[-450%] left-[-150%] ${
                         openServices
                           ? "block opacity-100 w-[650px]"
                           : "hidden opacity-0"
