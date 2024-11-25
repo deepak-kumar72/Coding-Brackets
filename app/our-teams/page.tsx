@@ -37,7 +37,7 @@ const teams: { id: number; name: string; role: string; image: string }[] = [
     id: 5,
     name: "Alekh Banshwar",
     role: "Full Stack Developer",
-    image: "teams-8.jpg",
+    image: "/teams-8.jpg",
   },
   {
     id: 6,
