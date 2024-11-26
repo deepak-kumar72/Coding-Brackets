@@ -173,7 +173,7 @@ const NavBar = () => {
   const [servicesMobileView, setServicesMobileView] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setPopUpState(true), 3000);
+    const timeout = setTimeout(() => setPopUpState(false), 3000);
 
     return () => clearTimeout(timeout);
   }, []);
