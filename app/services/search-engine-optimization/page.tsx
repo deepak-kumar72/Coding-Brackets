@@ -9,7 +9,7 @@ import { notFound } from "next/navigation";
 const SearchEngineOptimisation = async () => {
   let data = await prisma.services_pages.findFirst({
     where: {
-      name: "seo",
+      name: "Search Engine Optimisation",
     },
   });
 
@@ -32,7 +32,7 @@ const SearchEngineOptimisation = async () => {
 
   return (
     <main className="max-w-[100vw] overflow-x-hidden">
-      <DevelopmentSection title={`${data.name} Development`} />
+      <DevelopmentSection title={`${data.name} `} />
 
       <AboutServicePage aboutService={aboutService} />
 
