@@ -22,7 +22,6 @@ const SocialMediaOptimisation = async () => {
     "aria-readonly"
   );
 
-  // Prepare the `aboutService` object with hardcoded data
   const aboutService: AboutService = {
     title: data.title,
     subHeading: data.sub_title,
@@ -44,5 +43,6 @@ const SocialMediaOptimisation = async () => {
 };
 
 export const dynamic = "force-dynamic";
+
 
 export default SocialMediaOptimisation;
