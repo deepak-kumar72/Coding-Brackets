@@ -9,7 +9,7 @@ import { notFound } from "next/navigation";
 const DjangoDevelopmentPage = async () => {
   let data = await prisma.services_pages.findFirst({
     where: {
-      name: "Django",
+      name: "Djan",
     },
   });
 

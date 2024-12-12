@@ -9,7 +9,7 @@ import { notFound } from "next/navigation";
 const SymfonyDevelopmentPage = async () => {
   let data = await prisma.services_pages.findFirst({
     where: {
-      name: "Symfony",
+      name: "Symfo",
     },
   });
 

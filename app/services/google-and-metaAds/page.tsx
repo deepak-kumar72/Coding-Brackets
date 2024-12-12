@@ -9,7 +9,7 @@ import { notFound } from "next/navigation";
 const GoogleMetaAds = async () => {
   let data = await prisma.services_pages.findFirst({
     where: {
-      name: "ads",
+      name: "Google & Meta Ads",
     },
   });
 
@@ -32,7 +32,7 @@ const GoogleMetaAds = async () => {
 
   return (
     <main className="max-w-[100vw] overflow-x-hidden">
-      <DevelopmentSection title={`${data.name} Development`} />
+      <DevelopmentSection title={`${data.name} `} />
 
       <AboutServicePage aboutService={aboutService} />
 
